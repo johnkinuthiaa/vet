@@ -22,14 +22,13 @@ public class Pet {
     private LocalDateTime createdOn;
 
     public Pet(){}
-    public Pet(String name,String breed,String color,Integer age,String description,BigDecimal price,LocalDateTime createdOn){
+    public Pet(String name,String breed,String color,Integer age,String description,BigDecimal price){
         this.name=name;
         this.breed=breed;
         this.color=color;
         this.age =age;
         this.description=description;
         this.price=price;
-        this.createdOn=createdOn;
     }
     public Long getId(){
         return id;
