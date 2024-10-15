@@ -30,7 +30,6 @@ public class Pet {
         this.description=description;
         this.price=price;
         this.createdOn=createdOn;
-
     }
     public Long getId(){
         return id;
