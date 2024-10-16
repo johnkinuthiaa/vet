@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import static java.util.Collections.emptyList;
+
 @Service
 public class PetService implements PetServiceInterface{
     private final PetRepository repository;
