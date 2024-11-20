@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 
 
 @Service
+
 public class PetService implements PetServiceInterface{
     private final PetRepository repository;
     public PetService(PetRepository repository){
