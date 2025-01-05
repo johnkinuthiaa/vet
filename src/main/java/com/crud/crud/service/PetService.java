@@ -41,6 +41,7 @@ public class PetService implements PetServiceInterface{
         }
         Pet pet1 =new Pet();
         pet1.setName(pet.getName());
+        pet1.setImage(pet.getImage());
         pet1.setBreed(pet.getBreed());
         pet1.setColor(pet.getColor());
         pet1.setDescription(pet.getDescription());

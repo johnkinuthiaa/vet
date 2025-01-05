@@ -19,16 +19,24 @@ public class Pet {
     private Integer age;
     private String description;
     private BigDecimal price;
+    private String image;
     private LocalDateTime createdOn;
 
     public Pet(){}
-    public Pet(String name,String breed,String color,Integer age,String description,BigDecimal price){
+    public Pet(String name,String breed,String color,Integer age,String description,BigDecimal price,String image){
         this.name=name;
         this.breed=breed;
         this.color=color;
         this.age =age;
         this.description=description;
         this.price=price;
+        this.image=image;
+    }
+    public void setImage(String image){
+        this.image=image;
+    }
+    public String getImage(){
+        return image;
     }
     public Long getId(){
         return id;

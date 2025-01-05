@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/pets")
+@CrossOrigin
 public class PetController {
     private final PetServiceInterface service;
     public PetController(PetServiceInterface service){
@@ -37,6 +38,12 @@ public class PetController {
     @DeleteMapping("/delete")
     public void deletePetById(@RequestParam Long id){
         service.deletePetById(id);
+    }
+    @PostMapping("/create/list")
+    public void createWithList(@RequestBody List<Pet> pets){
+        for (Pet pet:pets){
+            service.createNewPet(pet);
+        }
     }
     @DeleteMapping("/all")
     public void deleteAllPets(){
